@@ -5,17 +5,17 @@ exports.creditCheck = function(cardNum) {
       // if even
       if (i % 2 == 0) {
         // double the digit and check if less than 9
-        if (cardNum[i]*2 < 10) {
+        if (cardNum[i] * 2 < 10) {
           //if so, add to result
-          arr.push(cardNum[i]*2);
+          arr.push(cardNum[i] * 2);
         } else {
           // if not, sum the digits of the products and add to result
-          arr.push(cardNum[i]*2-9);
+          arr.push(cardNum[i] * 2 - 9);
         }
       } else {
         // if digit position is odd
         // add to result, ensuring variable is a number
-        arr.push(parseInt(cardNum[i],10))
+        arr.push(parseInt(cardNum[i], 10))
       }
     }
     // reduction function replaces code like this:
